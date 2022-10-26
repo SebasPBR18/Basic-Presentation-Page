@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+body{
+    font-family: 'Raleway', sans-serif;
+} 
+:root{
+    --bacground: linear-gradient(135deg,#667eea7e,#764ba298 100%);
+    --bacground2: linear-gradient(135deg,#3236467e,#22212498 100%);
+    --bacground3: linear-gradient(135deg,#8316cb7e,#311d5f98 100%);
+    --bacground4: linear-gradient(135deg,#150c817e,#2358a398 100%);
+    --bacground5: linear-gradient(135deg,#64166d7e,#6d044e98 100%);
+    --color-primary:#000000; 
+    --color-secondary:#764ba2;
+    --boton-padding:20px 40px;
+}
+.fondo{
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+ 
+.border{ 
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-radius: 30px;    
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto; 
+    overflow: hidden;
+    padding: 80px 0;
+    max-width: 1500px;    
+    height: max-content;
+}
+.subtitle{
+    color: var(--color-primary);
+    font-size: 2.5rem;
+    margin-bottom: 35px;
+}
+/*nav*/
+.nav{ 
+    position: relative;
+    top: -100px; 
+
+    width: 700px;
+    height: 100px;
+    
+    font-size: 2em; 
+    font-weight: 400;
+
+    border-radius: 20px;
+    border-style: double;
+    width: 100%;
+
+    background-color: #131932;
+}
+.nav__items{
+    position: relative;  
+    margin-left: 50px;  
+    top: 20%;
+    left: 25%;
+    color: white;
+} 
+.nav__items--cta{ 
+    border: 2px solid #ffffff;
+    margin-right: 10px;
+    border-style: solid;
+    text-shadow: 1.5px 1.5px 1.5px rgba(11, 60, 68, 0.822);  
+}
+.nav__items--redesociales{
+    width: 80px;  
+    font-size: 2em;
+}
+
+/*hero*/
+.home-header{ 
+    text-align: center;
+    background-image:var(--bacground), url('../assests/fondo1.jpg') ; 
+    font-size: 10px;    
+    position: relative;
+    width: 90%; 
+    max-width: 1500px; 
+    background-color: #131135; 
+    color: white;
+    margin: 0 auto;  
+}
+
+.home-header__title{
+    position: relative;
+    right: 5%;
+    font-style: italic;
+    font-size: 3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.home-header__subtitle{
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    position: relative; 
+    font-style: oblique;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.home-header__container{
+    text-align: center; 
+    position: relative; 
+    right: -15%; 
+    width: max-content;
+    height: 200px;
+    border-style: double; 
+    border-color: rgb(210, 72, 17);
+    border-radius: 55px;
+    background-color: #131632;
+}
+.home-header__cta{ 
+    font-size: 1.5em;   
+}
+.home-header__wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+.subtitle{
+   font-size: 3em;
+   size: 20%;  
+   text-align: center;
+}
+
+/*presentacion*/
+.presentacion{     
+    height: max-content; 
+    background-image:var(--bacground2), url("../assests/fondo2.jpg");    
+    position: relative;
+}
+
+.presentacion__img{ 
+    width: 250px;
+    position: relative;
+    right: -40%; 
+}
+
+.presentacion__parrafo{ 
+    font-size: 1.2em;
+    size: 20%; 
+    text-align: justify;
+    width: 20%;
+    position: relative;
+    right: -40%;
+    color: white;
+}
+
+/*about*/
+.about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
+    min-height: 400px;
+    background-image:var(--bacground3),url('../assests/fondo3.jpg');    
+}
+.about__parrafo{
+    color: white;
+    font-size: 1.2em;
+    size: 20%; 
+    text-align: justify;
+}
+.about__text{ 
+    position: relative; 
+    text-align: center;  
+}
+
+.about__figure{
+    top: 20px;
+    position: relative;   
+    text-align: center;
+}
+
+.about__figure--right{ 
+    text-align: center; 
+}
+
+.about__img{   
+     width: max-content; 
+}
+
+.about__text--right{
+    text-align: right;
+}
+.proyects{  
+    background-image:var(--bacground4),url('../assests/fondo4.jpg');   
+    background-color: transparent; 
+}
+.testimony{
+    display: grid;
+    grid-template-rows: 0.5fr;
+    background-image:var(--bacground5),url('../assests/fondo5.jpg');   
+}
+.testimony__item{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+} 
+.testimony__person{
+       width: 300px;
+       position: relative; 
+       right: -40%;
+}
+ 
+.testimony__text{
+    position: relative; 
+    text-align: right;
+}
+
+.testimony__parrafo{
+    text-align: justify;
+    width: 100%; 
+    color: white;
+}
+
+.testimony__person--right{  
+    right: -20%;
+}
+
+.testimony__text--right{ 
+    text-align: center;
+}
+
+.testimony__parrafo--right{ 
+    width: 80%;
+}
+
+.footer__container{
+    background-color: #111831;
+    padding: 30px 0;
+}
